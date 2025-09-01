@@ -1,0 +1,127 @@
+    /* === Cosmic Theme === */
+    :root {
+      --space-purple: #3a0ca3;
+      --star-yellow: #f9c74f;
+      --planet-blue: #4cc9f0;
+      --bg-dark: #1a1a2e;
+    }
+
+    body {
+      font-family: "Bubblegum Sans", cursive, sans-serif;
+      background-color: var(--bg-dark);
+      color: white;
+      margin: 40;
+      line-height: 1.6;
+    }
+
+    /* === Horizontal Nav === */
+    nav {
+      background-color: var(--space-purple);
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+			display: flex;
+			flex-direction: row wrap;
+			align-items: center;
+			justify-content: space-between;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav li {
+      padding: 0.5rem 5rem;
+    }
+
+    nav a {
+      color: var(--star-yellow);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* === Hero Section === */
+    .buy {
+      cursor: url("EstrelaQuatroPontas.svg"), auto;
+      text-align: center;
+      padding: 4rem 1rem;
+      background: url("fundo\ sem\ botoes.png");
+	  background-size: cover;
+	}
+
+    .buy h1 {
+      font-size: 3rem;
+      color: var(--planet-blue);
+      text-shadow: 0 0 10px var(--star-yellow);
+    }
+
+    .buy p {
+      font-size: 1.5rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+	
+    /* === Button Style === */
+    .cta-button {
+      display: inline-block;
+      background-color: var(--star-yellow);
+      color: var(--space-purple);
+      padding: 0.8rem 2rem;
+      margin-top: 1rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.3s;
+    }
+
+    .cta-button:hover {
+      transform: scale(1.1);
+    }
+
+    .centralize {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      flex-flow: column wrap;
+    }
+
+    img {
+      width: 2.5rem;
+      display: inline;
+      cursor: url("EstrelaQuatroPontas.svg"), auto;
+    }
+    /* === Responsive Adjustments === */
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+	
+    iframe {
+       justify-content: center;
+       align-items: center;
+       align-content: center;
+       align-self: center;
+    }
+	
+	footer {
+      background-color: #1a1a1a;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      margin-top: 50px;
+    }
+
+  #planets h1 {
+    display: inline;
+  }
